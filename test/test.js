@@ -2,21 +2,21 @@ const assert = require("assert")
 
 describe("file to be tested", () => {
     context("function to be tested", () => {
-        before(() => {
-            console.log("----before")
-        })
+        // before(() => {
+        //     console.log("----before")
+        // })
 
-        after(() => {
-            console.log("----after")
-        })
+        // after(() => {
+        //     console.log("----after")
+        // })
 
-        beforeEach(() => {
-            console.log("----beforeEach")
-        })
+        // beforeEach(() => {
+        //     console.log("----beforeEach")
+        // })
 
-        afterEach(() => {
-            console.log("----afterEach")
-        })
+        // afterEach(() => {
+        //     console.log("----afterEach")
+        // })
         
         it("should do something", () => {
             assert.equal(1, 2)
@@ -27,5 +27,9 @@ describe("file to be tested", () => {
         })
 
         it("this is a pending test");
+    })
+
+    context("An other function", () => {
+        it("an other pending test");
     })
 })

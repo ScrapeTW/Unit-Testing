@@ -37,10 +37,15 @@ describe("file to be tested", () => {
 
         it("this is a pending test");
     })
+
+    context("An other function", () => {
+        it("an other pending test");
+    })
 })
 ```
 
-#### Lexiques :
+#### Explication
+
 - La fonction __before()__ permet d'effectuer une action au démarrage du context
 - La fonction __after()__ permet d'effectuer une action en sortie de context
 - La fonction __beforeEach()__ permet d'effectuer une action en début de test
