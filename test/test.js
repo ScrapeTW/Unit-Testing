@@ -1,12 +1,3 @@
-# Unit-Testing
-Unit Testing courses on Udemy by Murtez Alrohani
-
-
-## Architecture de base
-
-Le [script de test](./test/test.js)
-
-```
 const assert = require("assert")
 
 describe("file to be tested", () => {
@@ -26,28 +17,15 @@ describe("file to be tested", () => {
         afterEach(() => {
             console.log("----afterEach")
         })
-
+        
         it("should do something", () => {
             assert.equal(1, 2)
         })
 
         it("should do something else", () => {
-            asser.deepEqual({ name: "joe" }, { name: "steve" })
+            assert.deepEqual({ name: "joe"}, { name: "steve"});
         })
 
         it("this is a pending test");
     })
 })
-```
-
-#### Lexiques :
-- La fonction __before()__ permet d'effectuer une action au démarrage du context
-- La fonction __after()__ permet d'effectuer une action en sortie de context
-- La fonction __beforeEach()__ permet d'effectuer une action en début de test
-- La fonction __afterEach()__ permet d'effectuer une action en sortie de test
-
-#### Éxécution
-
-```
-name@computer: ~/$ mocha test/test.js
-```
